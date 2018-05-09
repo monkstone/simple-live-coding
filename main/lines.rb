@@ -2,8 +2,8 @@ class Lines
 
   def initialize
     @elements = []
-    @line_height = $app.line_height
-    @line_space = $app.line_space
+    @line_height = Processing.app.line_height
+    @line_space = Processing.app.line_space
     @positiontable = generate_hashtable
     initialize_positiontable
   end
@@ -21,7 +21,7 @@ class Lines
     #get the linge and extract x, y param
     line_range = @positiontable[y].get_position
     y = line_range.to_a.last
-    [$app.start_of_editor_text, y]
+    [Processing.app.start_of_editor_text, y]
   end
 
   def make_new_line(cursor)

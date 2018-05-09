@@ -2,7 +2,7 @@ simple live coding
 ===============
 
 This is a proof of concept for a live drawing app in Ruby with
-the [Ruby-Processing Gem (based on processing-2.0.1, and jruby-1.7.4)](https://github.com/monkstone/ruby-processing)
+the [JRubyArt Gem (based on processing-3.3.7, and jruby-9.1.17.0)](https://github.com/ruby-processing/JRubyArt)
 
 Get inspired by [Bret Victor](http://worrydream.com/#!/LearnableProgramming) or join the project with your own idea..
 
@@ -16,7 +16,7 @@ With "ellipse 50, 50, 80, 80" or "rect/line/fill" you can draw and with mouse dr
 Notice
 ===============
 
-Start Ruby-Processing with "rp5 watch simple_live_coding.rb". This reloads "simple_live_coding.rb" after safing and you can implement your ideas in this file
+Start JRubyArt with `k9 -w simple_live_coding.rb`. This reloads `simple_live_coding.rb` after saving and you can implement your ideas in this file
 without need to restart. After implementation of the new feature just copy your code in a seperate file in the "main" directory and do "require_relative" for the file.
 
-This is live coding a live coding app...
+This is a live coding app...

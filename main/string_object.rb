@@ -22,10 +22,10 @@ class StringObject
 
   def update_param(x_mouse, y_mouse)
     #Try to find beginn of param and set this as the char_position to prevent unintendet param change!!!
-    char_position = find_char($app.pressed[0]) 
+    char_position = find_char(Processing.app.pressed[0]) 
     found_number = find_number(char_position) unless char_position.nil?
     if found_number and found_number != [0..0]
-      new_param_value = -$app.width/2+x_mouse-length($app.initial_param[:string])+$app.initial_param[:value]
+      new_param_value = -Processing.app.width/2+x_mouse-length(Processing.app.initial_param[:string])+Processing.app.initial_param[:value]
       begin_of_param = found_number[0].first
       current_param_length = @content[found_number[0]].to_s.length
       @content[begin_of_param, current_param_length] = new_param_value.to_s
@@ -34,7 +34,7 @@ class StringObject
 
   def get_param_values
     #get the rigth param of x position and give the value back
-    char_position = find_char($app.pressed[0])
+    char_position = find_char(Processing.app.pressed[0])
     if char_position
       found_number = find_number(char_position)[0]
       unless found_number == [0..0]
@@ -63,7 +63,7 @@ class StringObject
     end
 
     def update_char_position
-      start_position = $app.width/2
+      start_position = Processing.app.width/2
       char_length_new = 0
       @char_position = Hash.new {|this_hash,missing_key| #set always a new hash to keep track of growing numbers
       found_key = this_hash.keys.find {|this_key| this_key.class == Range && this_key.include?(missing_key) }

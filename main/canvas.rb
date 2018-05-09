@@ -38,5 +38,4 @@ include Processing::Proxy
       puts "#{ e } (#{ e.class })!"
     end
   end
-
 end

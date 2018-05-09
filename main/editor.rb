@@ -16,15 +16,15 @@ class Editor
   def draw_text
     @lines.elements.each do |str_obj|
             eval("text '#{str_obj.content}',
-                         #{$app.width/2},
+                         #{Processing.app.width/2},
                          #{str_obj.get_position.to_a.last}")
     end
   end
 
   def draw_explanation
       return eval("text '#{@description.explanation}', 
-                         #{$app.width-@description.explanation_length-$app.editor_right_margin}, 
-                         #{@description.position+$app.editor_top_margin}")
+                         #{Processing.app.width-@description.explanation_length-Processing.app.editor_right_margin}, 
+                         #{@description.position+Processing.app.editor_top_margin}")
 
   end
 end

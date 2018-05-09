@@ -5,7 +5,7 @@ describe RubyDraw do
 
   describe "app" do
     it "should open window" do 
-      $app.width.should == 700
+      Processing.app.width.should == 700
     end
   end
 
