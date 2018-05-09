@@ -2,7 +2,8 @@ simple live coding
 ===============
 
 This is a proof of concept for a live drawing app in Ruby with
-the [JRubyArt Gem (based on processing-3.3.7, and jruby-9.1.17.0)](https://github.com/ruby-processing/JRubyArt)
+the [JRubyArt Gem (based on processing-3.3.7, and jruby-9.1.17.0)](https://github.com/ruby-processing/JRubyArt) java version openjdk version "1.8.0_172"
+
 
 Get inspired by [Bret Victor](http://worrydream.com/#!/LearnableProgramming) or join the project with your own idea..
 
